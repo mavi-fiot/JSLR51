@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <title>Calendar</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+   
+</head>
+
+<body>
+    <div class="datepicker">
+      <input type="text" id="datepickerInput">
+      <div class="calendar" id="calendar"></div>
+    </div>
+    <div class="month-year-selector">
+      <select id="monthSelector">
+        <option value="1">Січень</option>
+        <option value="2">Лютий</option>
+        <option value="3">Березень</option>
+        <option value="4">Квітень</option>
+        <option value="5">Травень</option>
+        <option value="6">Червень</option>
+        <option value="7">Липень</option>
+        <option value="8">Серпень</option>
+        <option value="9">Вересень</option>
+        <option value="10">Жовтень</option>
+        <option value="11">Листопад</option>
+        <option value="12">Грудень</option>
+      </select>
+      <input type="number" id="yearSelector" min="1999" max="2050" step="1" value="2024">
+      <button onclick="changeCalendar()">Перейти</button>
+    </div>
+    <button onclick="cancelDateSelection()">Скасувати</button>
+  
+    <script src="script.js"></script>
+  </body>
+  
+  </html>
+
+</html>
